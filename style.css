@@ -11,6 +11,7 @@ Contact
     color: rgb(24, 114, 117);
     margin: 0;
     padding: 0;
+    border: black 2px dashed;
 }
 body{
     background-color: rgb(32, 31, 46);
@@ -19,10 +20,6 @@ body{
     height: 100vh;
     box-sizing: border-box;
     justify-content: space-between;
-}
-section{
-    background-color: transparent;
-    margin-bottom: 200px;
 }
 h2{
 
@@ -44,15 +41,17 @@ h2{
     left: 20%;
     background-color: #ffffff00;
 }
+
+/* -------------------------NAVBAR-------------------------- */
 nav{
     display: flex;
-    height: 50px;
+    justify-content: space-between;
+    height: 10vh;
     background-color: rgb(6, 3, 26);
     margin: 0px 0px;
     border: 1px solid black;
 }
 .navbar{
-    justify-self: flex-start;
     border: 2px solid purple;
 }
 .navbar li{
@@ -61,7 +60,7 @@ nav{
     margin: 10px 30px;
 }
 .logobar{
-    justify-self: flex-end;
+    order: 1;
     border: 2px solid red;
 }
 .logobar li{
@@ -74,7 +73,74 @@ nav{
 .logobar li:hover{
     background-color: rgb(5, 3, 20);
 }
+
+
+/* ------------------------------------FOOTER---------------------------------- */
 footer{
-    height: 50px;
+    height: 5vh;
     background-color: rgb(6, 3, 26);
+}
+
+/* ---------------------------------MAIN SEC---------------------------------- */
+.main_sec{
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    border: red 2px solid;
+}
+.page_title{
+    align-self: center;
+    margin: 5vh 0;
+}
+p{
+    margin: 10px;
+}
+
+/* -------------------------------Blog Page----------------------------------- */
+.blog_sec{
+    display: flex;
+}
+.blog_display{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+.blog_img{
+    align-self: center;
+}
+/* ------------------------------Contact Page-------------------------------- */
+.contact_form{
+    display:flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 70vh;
+    align-self: center;
+}
+.contact_form input{
+    margin: 10px;
+}
+/* .contact_name{
+
+}
+.contact_from{
+
+} */
+.contact_message{
+    height: 300px;
+}
+.contact_btn{
+    width: 100px;
+    align-self: end;
+    background-color: rgb(199, 203, 255);
+}
+
+/* -------------------------------------Projects Page---------------------- */
+.skills_icons{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.project_item{
+    display: flex;
+    padding: 50px;
 }
