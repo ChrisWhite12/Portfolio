@@ -1,0 +1,106 @@
+/*
+navbar
+header
+Projects
+Skills
+About
+Contact
+*/
+
+@import "variables";
+*{ 
+    margin: 0;
+    padding: 0;
+    /* border: black 1px dashed; */
+    box-sizing: border-box;
+    color: $main_text_color;
+}
+
+@import "home";
+@import "projects";
+@import "blog";
+@import "about";
+@import "contact";
+
+body{
+    background-color: $back_color1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 600px){
+    .project_item{
+        flex-direction: row;
+    }
+    .blog_post{
+        flex-direction: row;
+    }
+}
+@media only screen and (max-width: 600px){
+    .project_item{
+        flex-direction: column;
+    }
+    .blog_post{
+        flex-direction: column;
+    }
+}
+/* -------------------------NAVBAR-------------------------- */
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: $back_color2;
+    margin: 0px 0px;
+    /* border: 1px solid black; */
+    .navbar{
+        display: flex;
+        width: 100vw;
+        /* border: 2px solid purple; */
+        justify-content: space-evenly;
+        align-items: center;
+        li{
+            display: inline-block;
+            text-decoration: none;
+        }
+    }
+}
+/* ------------------------------------FOOTER---------------------------------- */
+footer{
+    height: 10vh;
+    display: flex;
+    background-color: $back_color2;
+    justify-content: space-around;
+    align-items: center;
+    .logobar li{
+        display: inline-block;
+        text-decoration: none;
+        margin: 0px 30px;
+        padding: 10px;
+        &:hover{
+            background-color: $back_color1;
+            /* border: 2px solid red; */
+        }
+    }
+}
+
+/* ---------------------------------MAIN SEC---------------------------------- */
+.main_sec{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    /* border: red 2px solid; */
+}
+.page_title{
+    align-self: center;
+    margin: 30px 0;
+}
+p{
+    margin: 10px;
+}
+h2{
+    margin: 10px;
+}
+/* http://placekitten.com/200/200 */

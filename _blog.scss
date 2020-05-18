@@ -1,0 +1,20 @@
+.blog_sec{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+    width: 95vw;
+    .blog_post{
+        display: flex;
+        width: 80vw;
+        height: 30vh;
+        border: 2px black dotted;
+        margin: 10px;
+    }
+    .blog_img{
+        border-radius: 20px;
+        background-image: url("http://placekitten.com/300/600");
+        height: 200px;
+        width: 40vw;
+    }
+}

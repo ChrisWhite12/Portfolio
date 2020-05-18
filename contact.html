@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
 </head>
 <body>
     <nav>
@@ -15,21 +15,25 @@
             <li><a href="./about.html">About</a></li>
             <li><a href="./contact.html">Contact</a></li>
         </ul>
-        <ul class="logobar">
-            <li><ion-icon name="logo-github"></ion-icon></li>  
-            <li><ion-icon name="logo-linkedin"></ion-icon></li>  
-        </ul>
     </nav>
     <div class="main_sec">
         <h1 class="page_title">Contact</h1>
         <div class="contact_form">
-            <input class="contact_name" type="text">
-            <input class="contact_from" type="text">
-            <input class="contact_message" type="text">
+            <label for="contact_name">Name</label>
+            <input id="contact_name" type="text">
+            <label for="contact_email">Email</label>
+            <input id="contact_email" type="text">
+            <label for="contact_message">Message</label>
+            <input id="contact_message" type="text">
             <button class="contact_btn">Send</button>
         </div>
     </div>
-    <footer><p>footer</p></footer>
+    <footer>
+        <ul class="logobar">
+            <li><ion-icon name="logo-github"></ion-icon></li>  
+            <li><ion-icon name="logo-linkedin"></ion-icon></li>  
+        </ul>
+    </footer>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>

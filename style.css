@@ -6,141 +6,199 @@ Skills
 About
 Contact
 */
-
-*{ 
-    color: rgb(24, 114, 117);
-    margin: 0;
-    padding: 0;
-    border: black 2px dashed;
+* {
+  margin: 0;
+  padding: 0;
+  /* border: black 1px dashed; */
+  box-sizing: border-box;
+  color: #187275;
 }
-body{
-    background-color: rgb(32, 31, 46);
-    display: flex;
+
+.main_img {
+  background-image: linear-gradient(rgba(6, 3, 26, 0.5), rgba(6, 3, 26, 0.7)), url("./docs/img/circuit-unsplash.jpg");
+  background-size: cover;
+}
+
+.home_text {
+  margin: 40px;
+}
+
+.skills_icons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 20px;
+}
+.skills_icons ion-icon {
+  margin: 0 10px;
+}
+
+.project_list {
+  overflow: auto;
+  box-shadow: inset 0 0 5px 2px black;
+  width: 95vw;
+  margin: 20px;
+}
+.project_list .project_item {
+  display: flex;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  align-items: center;
+}
+.project_list .project_item .project1_img {
+  border-radius: 20px;
+  background-image: url("./docs/img/App1.png");
+  height: 200px;
+  width: 200px;
+}
+.project_list .project_item .project2_img {
+  border-radius: 20px;
+  background-image: url("./docs/img/Meal_planner.png");
+  height: 200px;
+  width: 200px;
+}
+.project_list .project_item .project3_img {
+  border-radius: 20px;
+  background-image: url("./docs/img/Covid.png");
+  height: 200px;
+  width: 200px;
+}
+.project_list .project_item .project_description {
+  width: 60vw;
+}
+
+.blog_sec {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+  width: 95vw;
+}
+.blog_sec .blog_post {
+  display: flex;
+  width: 80vw;
+  height: 30vh;
+  border: 2px black dotted;
+  margin: 10px;
+}
+.blog_sec .blog_img {
+  border-radius: 20px;
+  background-image: url("http://placekitten.com/300/600");
+  height: 200px;
+  width: 40vw;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 70vh;
+  align-self: center;
+}
+
+.contact_form input {
+  margin: 10px;
+}
+
+#contact_message {
+  height: 300px;
+}
+
+.contact_btn {
+  width: 100px;
+  align-self: end;
+  background-color: #c7cbff;
+}
+
+body {
+  background-color: #201f2e;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 600px) {
+  .project_item {
+    flex-direction: row;
+  }
+
+  .blog_post {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .project_item {
     flex-direction: column;
-    height: 100vh;
-    box-sizing: border-box;
-    justify-content: space-between;
-}
-h2{
+  }
 
-    font-family: Verdana, Tahoma, sans-serif;
-    margin: 50px 0px;
+  .blog_post {
+    flex-direction: column;
+  }
 }
-.back-rect{
-    background-image: linear-gradient(rgba(0, 0, 20, 0.6),rgba(0, 0, 20, 9)), url("./docs/img/Coding.jpg");
-    background-color: rgb(45, 44, 65);
-    height: 80vh;
-    width: 100vw;
-}
-.header-text{
-    font-family: Verdana, Tahoma, sans-serif;
-    font-size: 50px;
-    font-weight: 100;
-    position: absolute;
-    top: 75%;
-    left: 20%;
-    background-color: #ffffff00;
-}
-
 /* -------------------------NAVBAR-------------------------- */
-nav{
-    display: flex;
-    justify-content: space-between;
-    height: 10vh;
-    background-color: rgb(6, 3, 26);
-    margin: 0px 0px;
-    border: 1px solid black;
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: #06031a;
+  margin: 0px 0px;
+  /* border: 1px solid black; */
 }
-.navbar{
-    border: 2px solid purple;
+nav .navbar {
+  display: flex;
+  width: 100vw;
+  /* border: 2px solid purple; */
+  justify-content: space-evenly;
+  align-items: center;
 }
-.navbar li{
-    display: inline-block;
-    text-decoration: none;
-    margin: 10px 30px;
+nav .navbar li {
+  display: inline-block;
+  text-decoration: none;
 }
-.logobar{
-    order: 1;
-    border: 2px solid red;
-}
-.logobar li{
-    display: inline-block;
-    text-decoration: none;
-    margin: 0px 30px;
-    /* border: 1px solid black; */
-    padding: 10px;
-}
-.logobar li:hover{
-    background-color: rgb(5, 3, 20);
-}
-
 
 /* ------------------------------------FOOTER---------------------------------- */
-footer{
-    height: 5vh;
-    background-color: rgb(6, 3, 26);
+footer {
+  height: 10vh;
+  display: flex;
+  background-color: #06031a;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .logobar li {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0px 30px;
+  padding: 10px;
+}
+footer .logobar li:hover {
+  background-color: #201f2e;
+  /* border: 2px solid red; */
 }
 
 /* ---------------------------------MAIN SEC---------------------------------- */
-.main_sec{
-    display: flex;
-    flex-direction: column;
-    height: 85vh;
-    border: red 2px solid;
-}
-.page_title{
-    align-self: center;
-    margin: 5vh 0;
-}
-p{
-    margin: 10px;
+.main_sec {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  align-items: center;
+  /* border: red 2px solid; */
 }
 
-/* -------------------------------Blog Page----------------------------------- */
-.blog_sec{
-    display: flex;
-}
-.blog_display{
-    width: 70vw;
-    display: flex;
-    flex-direction: column;
-}
-.blog_img{
-    align-self: center;
-}
-/* ------------------------------Contact Page-------------------------------- */
-.contact_form{
-    display:flex;
-    flex-direction: column;
-    width: 80vw;
-    height: 70vh;
-    align-self: center;
-}
-.contact_form input{
-    margin: 10px;
-}
-/* .contact_name{
-
-}
-.contact_from{
-
-} */
-.contact_message{
-    height: 300px;
-}
-.contact_btn{
-    width: 100px;
-    align-self: end;
-    background-color: rgb(199, 203, 255);
+.page_title {
+  align-self: center;
+  margin: 30px 0;
 }
 
-/* -------------------------------------Projects Page---------------------- */
-.skills_icons{
-    display: flex;
-    justify-content: center;
-    align-content: center;
+p {
+  margin: 10px;
 }
-.project_item{
-    display: flex;
-    padding: 50px;
+
+h2 {
+  margin: 10px;
 }
+
+/* http://placekitten.com/200/200 */
+
+/*# sourceMappingURL=style.css.map */

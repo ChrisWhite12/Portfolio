@@ -1,0 +1,44 @@
+.skills_icons{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+    ion-icon{
+        margin: 0 10px;
+    }
+}
+.project_list{
+    overflow: auto;
+    box-shadow: inset 0 0 5px 2px black;
+    width: 95vw;
+    margin: 20px;
+    .project_item{
+        display: flex;
+        margin: 10px;
+        border: 2px solid black;
+        border-radius: 20px;
+        align-items: center;
+        .project1_img{
+            border-radius: 20px;
+            background-image: url("./docs/img/App1.png");
+            height: 200px;
+            width: 200px;
+        }
+        .project2_img{
+            border-radius: 20px;
+            background-image: url("./docs/img/Meal_planner.png");
+            height: 200px;
+            width: 200px;
+        }
+        .project3_img{
+            border-radius: 20px;
+            background-image: url("./docs/img/Covid.png");
+            height: 200px;
+            width: 200px;
+        }
+        .project_description{
+            width: 60vw;
+        }
+    }
+
+}
