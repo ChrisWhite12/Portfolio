@@ -12,6 +12,7 @@ Contact
   /* border: black 1px dashed; */
   box-sizing: border-box;
   color: #187275;
+  font-family: sans-serif;
 }
 
 .main_img {
@@ -21,6 +22,11 @@ Contact
 
 .home_text {
   margin: 40px;
+  font-family: "Oswald", sans-serif;
+  justify-self: center;
+  color: #06031a;
+  text-shadow: 0 0 2px #187275;
+  font-size: 50px;
 }
 
 .skills_icons {
@@ -40,60 +46,63 @@ Contact
   margin: 20px;
 }
 .project_list .project_item {
-  display: flex;
+  display: grid;
   margin: 10px;
   border: 2px solid black;
-  border-radius: 20px;
-  align-items: center;
+  border-radius: 22px;
+  justify-items: stretch;
 }
-.project_list .project_item .project1_img {
+.project_list .project_item img {
   border-radius: 20px;
-  background-image: url("./docs/img/App1.png");
-  height: 200px;
-  width: 200px;
-}
-.project_list .project_item .project2_img {
-  border-radius: 20px;
-  background-image: url("./docs/img/Meal_planner.png");
-  height: 200px;
-  width: 200px;
-}
-.project_list .project_item .project3_img {
-  border-radius: 20px;
-  background-image: url("./docs/img/Covid.png");
-  height: 200px;
-  width: 200px;
+  border: 2px solid black;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  grid-row: 1/2;
+  grid-column: 1/2;
 }
 .project_list .project_item .project_description {
   width: 60vw;
 }
 
 .blog_sec {
+  overflow: auto;
+  box-shadow: inset 0 0 5px 2px black;
+  width: 95vw;
+  margin: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  overflow: auto;
-  width: 95vw;
 }
 .blog_sec .blog_post {
-  display: flex;
-  width: 80vw;
-  height: 30vh;
-  border: 2px black dotted;
+  display: grid;
   margin: 10px;
+  border: 2px solid black;
+  border-radius: 22px;
+  justify-items: stretch;
 }
-.blog_sec .blog_img {
+.blog_sec img {
   border-radius: 20px;
-  background-image: url("http://placekitten.com/300/600");
-  height: 200px;
-  width: 40vw;
+  border: 2px solid black;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.blog_sec .blog_info {
+  width: 60vw;
+}
+
+.about_text {
+  width: 95vw;
 }
 
 .contact_form {
   display: flex;
   flex-direction: column;
   width: 80vw;
-  height: 70vh;
+  height: 65vh;
   align-self: center;
 }
 
@@ -107,6 +116,7 @@ Contact
 
 .contact_btn {
   width: 100px;
+  margin: 10px;
   align-self: end;
   background-color: #c7cbff;
 }
@@ -121,20 +131,46 @@ body {
 
 @media only screen and (min-width: 600px) {
   .project_item {
-    flex-direction: row;
+    grid-template-columns: 30vw 1fr;
+    grid-template-rows: 1fr;
+    height: 200px;
+  }
+
+  .project_description {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .blog_info {
+    grid-row: 1/2;
+    grid-column: 2/3;
   }
 
   .blog_post {
-    flex-direction: row;
+    grid-template-columns: 30vw 1fr;
+    grid-template-rows: 1fr;
+    height: 200px;
   }
 }
 @media only screen and (max-width: 600px) {
   .project_item {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 1fr;
+  }
+
+  .project_description {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .blog_info {
+    grid-row: 2/3;
+    grid-column: 1/2;
   }
 
   .blog_post {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 1fr;
   }
 }
 /* -------------------------NAVBAR-------------------------- */
@@ -156,6 +192,11 @@ nav .navbar {
 nav .navbar li {
   display: inline-block;
   text-decoration: none;
+  padding: 10px;
+}
+nav .navbar li:hover {
+  background-color: #14141f;
+  box-shadow: inset 0 0 5px black;
 }
 
 /* ------------------------------------FOOTER---------------------------------- */
@@ -173,7 +214,8 @@ footer .logobar li {
   padding: 10px;
 }
 footer .logobar li:hover {
-  background-color: #201f2e;
+  background-color: #14141f;
+  box-shadow: inset 0 0 5px black;
   /* border: 2px solid red; */
 }
 
