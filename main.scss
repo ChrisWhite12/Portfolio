@@ -30,6 +30,12 @@ body{
     height: 100vh;
     justify-content: space-between;
 }
+//desktop
+@media only screen and (min-width: 800px){
+    
+
+}
+
 // large screen
 @media only screen and (min-width: 600px){
     .project_item{
