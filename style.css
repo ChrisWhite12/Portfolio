@@ -16,7 +16,7 @@ Contact
 }
 
 .main_img {
-  background-image: linear-gradient(rgba(6, 3, 26, 0.5), rgba(6, 3, 26, 0.7)), url("./docs/img/circuit-unsplash.jpg");
+  background-image: linear-gradient(rgba(6, 3, 26, 0.5), rgba(6, 3, 26, 0.7)), url("./docs/img/pcb_sample2.png");
   background-size: cover;
 }
 
@@ -29,6 +29,28 @@ Contact
   font-size: 50px;
 }
 
+@keyframes icon_hover_in {
+  0% {
+    filter: grayscale(100%);
+  }
+  50% {
+    filter: grayscale(20%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
+}
+@keyframes icon_hover_out {
+  0% {
+    filter: grayscale(0%);
+  }
+  50% {
+    filter: grayscale(80%);
+  }
+  100% {
+    filter: grayscale(100%);
+  }
+}
 .skills_icons {
   display: flex;
   justify-content: space-evenly;
@@ -39,6 +61,7 @@ Contact
 .skills_icons img {
   width: 50px;
   filter: grayscale(100%);
+  transition: transform 1s ease 0s;
 }
 
 .project_list {
@@ -197,7 +220,6 @@ nav {
   justify-content: space-between;
   height: 10vh;
   background-color: #06031a;
-  margin: 0px 0px;
   /* border: 1px solid black; */
 }
 nav .navbar {
@@ -213,7 +235,7 @@ nav .navbar li {
   padding: 10px;
 }
 nav .navbar li:hover {
-  background-color: #14141f;
+  background-color: #201f2e;
   box-shadow: inset 0 0 5px black;
 }
 
@@ -231,13 +253,12 @@ footer .logobar li {
   align-items: center;
   text-decoration: none;
   margin: 0px 30px;
-  padding: 10px;
-  border: 2px solid red;
+  padding: 15px;
   width: 20px;
   height: 20px;
 }
 footer .logobar li:hover {
-  background-color: #14141f;
+  background-color: #201f2e;
   box-shadow: inset 0 0 5px black;
 }
 footer .logobar li img {
