@@ -6,6 +6,7 @@
     width: 50vw;
     img{
         width: 50px;
+        filter: grayscale(100%);
     }
 }
 .project_list{
@@ -40,6 +41,7 @@
         color: green;
     }
 }
+
 .project2{
     .project_status{
         color: orange;

@@ -32,7 +32,7 @@ body{
 }
 //desktop
 @media only screen and (min-width: 800px){
-    
+
 
 }
 
@@ -109,18 +109,26 @@ footer{
     justify-content: space-around;
     align-items: center;
     .logobar li{
-        display: inline-block;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         text-decoration: none;
         margin: 0px 30px;
         padding: 10px;
+        border: 2px solid red;
+        width: 20px;
+        height: 20px;
         &:hover{
             background-color: rgb(20, 20, 31);
             box-shadow: inset 0 0 5px black;
-            /* border: 2px solid red; */
+        }
+        img{
+            width: 20px;
+            height: 20px;
+            
         }
     }
 }
-
 /* ---------------------------------MAIN SEC---------------------------------- */
 .main_sec{
     display: flex;

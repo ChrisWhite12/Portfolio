@@ -11,7 +11,7 @@ Contact
   padding: 0;
   /* border: black 1px dashed; */
   box-sizing: border-box;
-  color: #187275;
+  color: #d6f2f8;
   font-family: sans-serif;
 }
 
@@ -25,7 +25,7 @@ Contact
   font-family: "Oswald", sans-serif;
   justify-self: center;
   color: #06031a;
-  text-shadow: 0 0 2px #187275;
+  text-shadow: 0 0 2px #d6f2f8;
   font-size: 50px;
 }
 
@@ -38,6 +38,7 @@ Contact
 }
 .skills_icons img {
   width: 50px;
+  filter: grayscale(100%);
 }
 
 .project_list {
@@ -45,7 +46,7 @@ Contact
   box-shadow: inset 0 0 5px 2px black;
   width: 95vw;
   margin: 20px;
-  scrollbar-color: #187275 #06031a;
+  scrollbar-color: #d6f2f8 #06031a;
 }
 .project_list .project_item {
   display: grid;
@@ -84,7 +85,7 @@ Contact
   box-shadow: inset 0 0 5px 2px black;
   width: 95vw;
   margin: 20px;
-  scrollbar-color: #187275 #06031a;
+  scrollbar-color: #d6f2f8 #06031a;
 }
 .blog_sec .blog_post {
   display: grid;
@@ -135,7 +136,7 @@ Contact
   width: 100px;
   margin: 10px;
   align-self: end;
-  background-color: #c7cbff;
+  background-color: #06031a;
 }
 
 body {
@@ -225,15 +226,23 @@ footer {
   align-items: center;
 }
 footer .logobar li {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   margin: 0px 30px;
   padding: 10px;
+  border: 2px solid red;
+  width: 20px;
+  height: 20px;
 }
 footer .logobar li:hover {
   background-color: #14141f;
   box-shadow: inset 0 0 5px black;
-  /* border: 2px solid red; */
+}
+footer .logobar li img {
+  width: 20px;
+  height: 20px;
 }
 
 /* ---------------------------------MAIN SEC---------------------------------- */
