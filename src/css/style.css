@@ -16,7 +16,7 @@ Contact
 }
 
 .main_img {
-  background-image: linear-gradient(rgba(6, 3, 26, 0.5), rgba(6, 3, 26, 0.7)), url("../docs/img/pcb_sample2.png");
+  background-image: linear-gradient(rgba(6, 3, 26, 0.5), rgba(6, 3, 26, 0.7)), url("../img/pcb_sample2.png");
   background-size: cover;
   justify-content: center;
 }
