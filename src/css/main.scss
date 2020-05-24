@@ -76,7 +76,7 @@ body{
 nav{
     display: flex;
     height: 10vh;
-    background-color: $back_color2;
+    background-color: $back_color1;
     /* border: 1px solid black; */
     .navbar{
         display: flex;
@@ -89,7 +89,7 @@ nav{
             padding: 10px;
             margin: 20px;
             &:hover{
-                background-color: $back_color1;
+                background-color: $back_color2;
                 box-shadow: inset 0 0 5px black;
             }
         }
@@ -103,7 +103,7 @@ nav{
 footer{
     height: 10vh;
     display: flex;
-    background-color: $back_color2;
+    background-color: $back_color1;
     justify-content: space-around;
     align-items: center;
     .logobar li{
@@ -116,7 +116,7 @@ footer{
         width: 20px;
         height: 20px;
         &:hover{
-            background-color: $back_color1;
+            background-color: $back_color2;
             box-shadow: inset 0 0 5px black;
         }
         img{
