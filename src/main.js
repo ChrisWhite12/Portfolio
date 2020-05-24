@@ -28,10 +28,13 @@ else if(window.matchMedia("(min-width: 800px)").matches)    //large screen
 
 document.querySelector('.menu_nav').addEventListener('click', el => {
     console.log(document.querySelector(".main_menu").style.display)
+    
     if (document.querySelector(".main_menu").style.display == 'inline-block'){
         document.querySelector(".main_menu").style.display = 'none'
+        document.querySelector('.menu_nav').src = './img/menu.svg'
     }
     else{
         document.querySelector(".main_menu").style.display = 'inline-block'
+        document.querySelector('.menu_nav').src = './img/close-outline.svg'
     }
 })
