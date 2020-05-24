@@ -16,17 +16,16 @@ Contact
 }
 
 .main_img {
-  background-image: linear-gradient(rgba(6, 3, 26, 0.5), rgba(6, 3, 26, 0.7)), url("./docs/img/pcb_sample2.png");
+  background-image: linear-gradient(rgba(6, 3, 26, 0.5), rgba(6, 3, 26, 0.7)), url("../../docs/img/pcb_sample2.png");
   background-size: cover;
+  justify-content: center;
 }
 
 .home_text {
-  margin: 40px;
   font-family: "Oswald", sans-serif;
-  justify-self: center;
   color: #06031a;
   text-shadow: 0 0 2px #d6f2f8;
-  font-size: 50px;
+  font-size: 80px;
 }
 
 @keyframes icon_hover_in {
@@ -88,7 +87,7 @@ Contact
   grid-column: 1/2;
 }
 .project_list .project_item .project_description {
-  width: 60vw;
+  justify-self: center;
 }
 
 .project1 .project_status {
@@ -110,7 +109,7 @@ Contact
   margin: 20px;
   scrollbar-color: #d6f2f8 #06031a;
 }
-.blog_sec .blog_post {
+.blog_sec .blog_post_item {
   display: grid;
   margin: 10px;
   border: 2px solid black;
@@ -125,6 +124,18 @@ Contact
   object-fit: cover;
   grid-row: 1/2;
   grid-column: 1/2;
+}
+
+.blog_post {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scrollbar-color: #d6f2f8 #06031a;
+}
+.blog_post img {
+  height: 200px;
+  width: 200px;
 }
 
 .about_text {
@@ -152,7 +163,7 @@ Contact
 }
 
 #contact_message {
-  height: 300px;
+  height: 200px;
 }
 
 .contact_btn {
@@ -180,6 +191,7 @@ body {
   .project_description {
     grid-row: 1/2;
     grid-column: 2/3;
+    width: 60vw;
   }
 
   .blog_info {
@@ -187,7 +199,7 @@ body {
     grid-column: 2/3;
   }
 
-  .blog_post {
+  .blog_post_item {
     grid-template-columns: 30vw 1fr;
     grid-template-rows: 1fr;
     height: 200px;
@@ -202,6 +214,7 @@ body {
   .project_description {
     grid-row: 2/3;
     grid-column: 1/2;
+    width: 80vw;
   }
 
   .blog_info {
@@ -209,7 +222,7 @@ body {
     grid-column: 1/2;
   }
 
-  .blog_post {
+  .blog_post_item {
     grid-template-columns: 1fr;
     grid-template-rows: 30vh 1fr;
   }
@@ -282,6 +295,8 @@ footer .logobar li img {
 
 p {
   margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
 }
 
 h2 {

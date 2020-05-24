@@ -46,12 +46,13 @@ body{
     .project_description{
         grid-row: 1/2;
         grid-column: 2/3;
+        width: 60vw;
     }
     .blog_info{
         grid-row: 1/2;
         grid-column: 2/3;
     }
-    .blog_post{
+    .blog_post_item{
         grid-template-columns: 30vw 1fr;
         grid-template-rows: 1fr;
         height: 200px;
@@ -66,12 +67,13 @@ body{
     .project_description{
         grid-row: 2/3;
         grid-column: 1/2;
+        width: 80vw;
     }
     .blog_info{
         grid-row: 2/3;
         grid-column: 1/2;
     }
-    .blog_post{
+    .blog_post_item{
         grid-template-columns: 1fr;
         grid-template-rows: 30vh 1fr;
     }
@@ -140,6 +142,8 @@ footer{
 }
 p{
     margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 h2{
     margin: 10px;

@@ -1,0 +1,13 @@
+.main_img{
+    // background-image: linear-gradient(rgb(6, 3, 26, 0.5), rgb(6, 3, 26, 0.7)), url("../../docs/img/circuit-unsplash.jpg");
+    // background-image: linear-gradient(rgb(6, 3, 26, 0.5), rgb(6, 3, 26, 0.7)), url("../../docs/img/pcb_sample.jpg");
+    background-image: linear-gradient(rgb(6, 3, 26, 0.5), rgb(6, 3, 26, 0.7)), url('../../docs/img/pcb_sample2.png');
+    background-size: cover;
+    justify-content: center;
+}
+.home_text{
+    font-family: $font_title, sans-serif;
+    color: $back_color2;
+    text-shadow: 0 0 2px $main_text_color;
+    font-size: 80px;
+}
