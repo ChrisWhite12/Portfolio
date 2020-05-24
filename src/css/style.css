@@ -160,10 +160,11 @@ Contact
 
 .contact_form input {
   margin: 10px;
+  height: 25px;
 }
 
 #contact_message {
-  height: 200px;
+  height: 150px;
 }
 
 .contact_btn {
