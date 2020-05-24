@@ -30,12 +30,6 @@ body{
     height: 100vh;
     justify-content: space-between;
 }
-//desktop
-@media only screen and (min-width: 800px){
-
-
-}
-
 // large screen
 @media only screen and (min-width: 600px){
     .project_item{
@@ -81,7 +75,6 @@ body{
 /* -------------------------NAVBAR-------------------------- */
 nav{
     display: flex;
-    justify-content: space-between;
     height: 10vh;
     background-color: $back_color2;
     /* border: 1px solid black; */
@@ -89,16 +82,20 @@ nav{
         display: flex;
         width: 100vw;
         /* border: 2px solid purple; */
-        justify-content: space-evenly;
+        // justify-content: space-evenly;
+        list-style-type: none;
         align-items: center;
         li{
-            display: inline-block;
-            text-decoration: none;
             padding: 10px;
+            margin: 20px;
             &:hover{
                 background-color: $back_color1;
                 box-shadow: inset 0 0 5px black;
             }
+        }
+        .menu_nav{
+            height: 30px;
+            width: 30px;
         }
     }
 }
@@ -149,3 +146,18 @@ h2{
     margin: 10px;
 }
 /* http://placekitten.com/200/200 */
+
+// ------------------------------------------------DROP DOWN MENU------------------------------------------
+.main_menu{
+    display: none;
+    .drop_menu_list{
+        list-style-type: none;        
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            text-align: center;
+        }
+    }
+}

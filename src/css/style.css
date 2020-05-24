@@ -11,7 +11,7 @@ Contact
   padding: 0;
   /* border: black 1px dashed; */
   box-sizing: border-box;
-  color: #d6f2f8;
+  color: #081e24;
   font-family: sans-serif;
 }
 
@@ -23,9 +23,20 @@ Contact
 
 .home_text {
   font-family: "Oswald", sans-serif;
-  color: #06031a;
-  text-shadow: 0 0 2px #d6f2f8;
+  color: #6e698f;
+  text-shadow: 0 0 2px #081e24;
   font-size: 80px;
+}
+
+.main_menu {
+  display: none;
+  position: absolute;
+  top: 10vh;
+  z-index: 1;
+}
+.main_menu ul li {
+  width: 100vw;
+  background-color: #8d89c9;
 }
 
 @keyframes icon_hover_in {
@@ -68,7 +79,7 @@ Contact
   box-shadow: inset 0 0 5px 2px black;
   width: 95vw;
   margin: 20px;
-  scrollbar-color: #d6f2f8 #06031a;
+  scrollbar-color: #081e24 #6e698f;
 }
 .project_list .project_item {
   display: grid;
@@ -95,11 +106,11 @@ Contact
 }
 
 .project2 .project_status {
-  color: orange;
+  color: orangered;
 }
 
 .project3 .project_status {
-  color: orange;
+  color: orangered;
 }
 
 .blog_sec {
@@ -107,7 +118,7 @@ Contact
   box-shadow: inset 0 0 5px 2px black;
   width: 95vw;
   margin: 20px;
-  scrollbar-color: #d6f2f8 #06031a;
+  scrollbar-color: #081e24 #6e698f;
 }
 .blog_sec .blog_post_item {
   display: grid;
@@ -131,7 +142,7 @@ Contact
   display: flex;
   flex-direction: column;
   align-items: center;
-  scrollbar-color: #d6f2f8 #06031a;
+  scrollbar-color: #081e24 #6e698f;
 }
 .blog_post img {
   height: 200px;
@@ -161,6 +172,7 @@ Contact
 .contact_form input {
   margin: 10px;
   height: 25px;
+  color: black;
 }
 
 #contact_message {
@@ -171,11 +183,11 @@ Contact
   width: 100px;
   margin: 10px;
   align-self: end;
-  background-color: #06031a;
+  background-color: #6e698f;
 }
 
 body {
-  background-color: #201f2e;
+  background-color: #8d89c9;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -231,33 +243,35 @@ body {
 /* -------------------------NAVBAR-------------------------- */
 nav {
   display: flex;
-  justify-content: space-between;
   height: 10vh;
-  background-color: #06031a;
+  background-color: #6e698f;
   /* border: 1px solid black; */
 }
 nav .navbar {
   display: flex;
   width: 100vw;
   /* border: 2px solid purple; */
-  justify-content: space-evenly;
+  list-style-type: none;
   align-items: center;
 }
 nav .navbar li {
-  display: inline-block;
-  text-decoration: none;
   padding: 10px;
+  margin: 20px;
 }
 nav .navbar li:hover {
-  background-color: #201f2e;
+  background-color: #8d89c9;
   box-shadow: inset 0 0 5px black;
+}
+nav .navbar .menu_nav {
+  height: 30px;
+  width: 30px;
 }
 
 /* ------------------------------------FOOTER---------------------------------- */
 footer {
   height: 10vh;
   display: flex;
-  background-color: #06031a;
+  background-color: #6e698f;
   justify-content: space-around;
   align-items: center;
 }
@@ -272,7 +286,7 @@ footer .logobar li {
   height: 20px;
 }
 footer .logobar li:hover {
-  background-color: #201f2e;
+  background-color: #8d89c9;
   box-shadow: inset 0 0 5px black;
 }
 footer .logobar li img {
@@ -305,5 +319,18 @@ h2 {
 }
 
 /* http://placekitten.com/200/200 */
+.main_menu {
+  display: none;
+}
+.main_menu .drop_menu_list {
+  list-style-type: none;
+}
+.main_menu .drop_menu_list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
