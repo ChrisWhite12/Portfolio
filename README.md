@@ -19,8 +19,8 @@ When the website is visited, the home page is displayed which has a navbar with 
 
 The website has also been designed the work with small screen devices. Instead of the navbar containing a list of links there is a menu (or Hamburger) icon that, when pressed, shows a menu with the links to the other pages. 
 
-<img src="./img/Main_mobile.png" alt="Main page - mobile" style="width:200px;"/>
-<img src="./img/Main_menu.png" alt="Main page - mobile" style="width:200px;"/>
+<img src="./docs/img/Main_mobile.png" alt="Main page - mobile" style="width:200px;"/>
+<img src="./docs/img/Main_menu.png" alt="Main page - mobile" style="width:200px;"/>
 
 All of the pages are styled in the same way with a navbar, main section and a footer. The main section is a flex container with a flex-direction set to column. This makes it easy to style as each item follows each other vertically and is centered on the page.
 
@@ -34,7 +34,7 @@ On the large screen version, when the project item is hovered over the skills in
 
 On the mobile version, the orientation is changed to vertical but without any hover effects.
 
-<img src="./img/Projects_mobile.png" alt="Main page - mobile" style="width:200px;"/>
+<img src="./docs/img/Projects_mobile.png" alt="Main page - mobile" style="width:200px;"/>
 
 The blog page is styled like the projects page and contains links the the blog post pages.
 
