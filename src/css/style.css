@@ -11,7 +11,7 @@ Contact
   padding: 0;
   /* border: black 1px dashed; */
   box-sizing: border-box;
-  color: #d6f2f8;
+  color: #081e24;
   font-family: sans-serif;
 }
 
@@ -23,8 +23,8 @@ Contact
 
 .home_text {
   font-family: "Orbitron", sans-serif;
-  color: #06031a;
-  text-shadow: 0 0 2px #d6f2f8;
+  color: #6e698f;
+  text-shadow: 0 0 2px #081e24;
   font-size: 80px;
 }
 
@@ -68,7 +68,7 @@ Contact
   box-shadow: inset 0 0 5px 2px black;
   width: 95vw;
   margin: 20px;
-  scrollbar-color: #d6f2f8 #06031a;
+  scrollbar-color: #081e24 #6e698f;
 }
 .project_list .project_item {
   display: grid;
@@ -107,7 +107,7 @@ Contact
   box-shadow: inset 0 0 5px 2px black;
   width: 95vw;
   margin: 20px;
-  scrollbar-color: #d6f2f8 #06031a;
+  scrollbar-color: #081e24 #6e698f;
 }
 .blog_sec .blog_post_item {
   display: grid;
@@ -131,7 +131,7 @@ Contact
   display: flex;
   flex-direction: column;
   align-items: center;
-  scrollbar-color: #d6f2f8 #06031a;
+  scrollbar-color: #081e24 #6e698f;
   width: 95vw;
 }
 .blog_post img {
@@ -173,11 +173,11 @@ Contact
   width: 100px;
   margin: 10px;
   align-self: end;
-  background-color: #06031a;
+  background-color: #6e698f;
 }
 
 body {
-  background-color: #201f2e;
+  background-color: #8d89c9;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -211,7 +211,7 @@ body {
 @media only screen and (max-width: 600px) {
   .project_item {
     grid-template-columns: 1fr;
-    grid-template-rows: 30vh 1fr;
+    grid-template-rows: 20vh 1fr;
   }
 
   .project_description {
@@ -227,14 +227,14 @@ body {
 
   .blog_post_item {
     grid-template-columns: 1fr;
-    grid-template-rows: 30vh 1fr;
+    grid-template-rows: 20vh 1fr;
   }
 }
 /* -------------------------NAVBAR-------------------------- */
 nav {
   display: flex;
   height: 10vh;
-  background-color: #06031a;
+  background-color: #6e698f;
   /* border: 1px solid black; */
 }
 nav .navbar {
@@ -249,7 +249,7 @@ nav .navbar li {
   margin: 20px;
 }
 nav .navbar li:hover {
-  background-color: #201f2e;
+  background-color: #8d89c9;
   box-shadow: inset 0 0 5px black;
 }
 nav .navbar .menu_nav {
@@ -261,7 +261,7 @@ nav .navbar .menu_nav {
 footer {
   height: 10vh;
   display: flex;
-  background-color: #06031a;
+  background-color: #6e698f;
   justify-content: space-around;
   align-items: center;
 }
@@ -276,7 +276,7 @@ footer .logobar li {
   height: 20px;
 }
 footer .logobar li:hover {
-  background-color: #201f2e;
+  background-color: #8d89c9;
   box-shadow: inset 0 0 5px black;
 }
 footer .logobar li img {
@@ -322,7 +322,7 @@ h2 {
   align-items: center;
   list-style-type: none;
   border: 2px solid black;
-  background-color: #201f2e;
+  background-color: #8d89c9;
   width: 100vw;
 }
 .main_menu .drop_menu_list li {
