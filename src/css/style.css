@@ -211,7 +211,7 @@ body {
 @media only screen and (max-width: 600px) {
   .project_item {
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 30vh 1fr;
   }
 
   .project_description {
@@ -227,7 +227,7 @@ body {
 
   .blog_post_item {
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 30vh 1fr;
   }
 }
 /* -------------------------NAVBAR-------------------------- */
