@@ -5,9 +5,58 @@
     background-size: cover;
     justify-content: center;
 }
-.home_text{
+h1{
     font-family: $font_title, sans-serif;
     color: $back_color2;
     text-shadow: 0 0 2px $main_text_color;
-    font-size: 80px;
+    font-size: 40px;
+    text-align: center;
+}
+.text_grid{
+    z-index: 1;
+    height: 70vmin;
+    width: 70vmin;
+    display: grid;
+    font-size: 40px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+
+    .letter_C1{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .letter_H1{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .letter_R1{
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+    .letter_I1{
+        grid-row: 2/3;
+        grid-column: 4/5;
+    }
+    .letter_S1{
+        grid-row: 2/3;
+        grid-column: 5/6;
+    }
+
+    .letter_W2{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .letter_I2{
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+    .letter_T2{
+        grid-row: 4/5;
+        grid-column: 2/3;
+    }
+    .letter_E2{
+        grid-row: 5/6;
+        grid-column: 2/3;
+    }
 }
