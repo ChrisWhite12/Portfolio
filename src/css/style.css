@@ -11,20 +11,20 @@ Contact
   padding: 0;
   /* border: black 1px dashed; */
   box-sizing: border-box;
-  color: #f5fcd8;
+  color: #d6f2f8;
   font-family: sans-serif;
 }
 
 .main_img {
-  background-image: linear-gradient(rgba(6, 3, 26, 0.5), rgba(6, 3, 26, 0.7)), url("../img/pcb_sample.jpg");
+  background-image: linear-gradient(rgba(6, 3, 26, 0.5), rgba(6, 3, 26, 0.7)), url("../img/circuit-unsplash.jpg");
   background-size: cover;
   justify-content: center;
 }
 
 h1 {
   font-family: "Orbitron", sans-serif;
-  color: #92cd3f;
-  text-shadow: 0 0 2px #f5fcd8;
+  color: #06031a;
+  text-shadow: 0 0 2px #d6f2f8;
   font-size: 40px;
   text-align: center;
 }
@@ -35,7 +35,7 @@ h1 {
   width: 70vmin;
   display: grid;
   font-size: 40px;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fxr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
 }
@@ -116,7 +116,7 @@ h1 {
   box-shadow: inset 0 0 5px 2px black;
   width: 95vw;
   margin: 20px;
-  scrollbar-color: #f5fcd8 #92cd3f;
+  scrollbar-color: #d6f2f8 #06031a;
 }
 .project_list .project_item {
   display: grid;
@@ -155,7 +155,7 @@ h1 {
   box-shadow: inset 0 0 5px 2px black;
   width: 95vw;
   margin: 20px;
-  scrollbar-color: #f5fcd8 #92cd3f;
+  scrollbar-color: #d6f2f8 #06031a;
 }
 .blog_sec .blog_post_item {
   display: grid;
@@ -179,7 +179,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  scrollbar-color: #f5fcd8 #92cd3f;
+  scrollbar-color: #d6f2f8 #06031a;
   width: 95vw;
 }
 .blog_post img {
@@ -221,12 +221,12 @@ h1 {
   width: 100px;
   margin: 10px;
   align-self: end;
-  background-color: #92cd3f;
+  background-color: #06031a;
   color: black;
 }
 
 body {
-  background-color: #05351d;
+  background-color: #201f2e;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -283,7 +283,7 @@ body {
 nav {
   display: flex;
   height: 10vh;
-  background-color: #05351d;
+  background-color: #201f2e;
   /* border: 1px solid black; */
 }
 nav .navbar {
@@ -298,7 +298,7 @@ nav .navbar li {
   margin: 20px;
 }
 nav .navbar li:hover {
-  background-color: #92cd3f;
+  background-color: #06031a;
   box-shadow: inset 0 0 5px black;
 }
 nav .navbar .menu_nav {
@@ -310,7 +310,7 @@ nav .navbar .menu_nav {
 footer {
   height: 10vh;
   display: flex;
-  background-color: #05351d;
+  background-color: #201f2e;
   justify-content: space-around;
   align-items: center;
 }
@@ -325,7 +325,7 @@ footer .logobar li {
   height: 20px;
 }
 footer .logobar li:hover {
-  background-color: #92cd3f;
+  background-color: #06031a;
   box-shadow: inset 0 0 5px black;
 }
 footer .logobar li img {
@@ -371,7 +371,7 @@ h2 {
   align-items: center;
   list-style-type: none;
   border: 2px solid black;
-  background-color: #05351d;
+  background-color: #201f2e;
   width: 100vw;
 }
 .main_menu .drop_menu_list li {
