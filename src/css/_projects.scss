@@ -56,23 +56,9 @@
         }
         .project_description{
             justify-self: center;
+            a{
+                margin: 10px;
+            }
         }
-    }
-}
-
-.project1{
-    .project_status{
-        color: green;
-    }
-}
-
-.project2{
-    .project_status{
-        color: orangered;
-    }
-}
-.project3{
-    .project_status{
-        color: orangered;
     }
 }

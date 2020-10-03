@@ -29,11 +29,13 @@ if (window.matchMedia("(min-width: 800px)").matches)
     document.querySelector(".project2").addEventListener('mouseover',el => {
         html_i.style = 'animation: icon_hover_in 1s linear 0s 1 normal both;'; 
         css_i.style = 'animation: icon_hover_in 1s linear 0s 1 normal both;';
+        ruby_i.style = 'animation: icon_hover_in 1s linear 0s 1 normal both;';
     })
     
     document.querySelector(".project2").addEventListener('mouseleave',el => {
         html_i.style = 'animation: icon_hover_out 1s linear 0s 1 normal both;';
         css_i.style = 'animation: icon_hover_out 1s linear 0s 1 normal both;';
+        ruby_i.style = 'animation: icon_hover_out 1s linear 0s 1 normal both;';
     })
 
 }
